@@ -1,0 +1,20 @@
+<ion-view title="Event Information" id="page7">
+  <ion-content padding="true" class="has-header">
+    <h1 id="eventInformation2-heading2" style="color:#000000;">{{save.eventTitle}}</h1>
+    <div id="eventInformation2-markdown6" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Presented By: {{save.Presenter[0].firstName}} {{save.Presenter[0].lastName}}</p>
+    </div>
+    <div id="eventInformation2-markdown7" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Date: {{save.date}}</p>
+    </div>
+    <div id="eventInformation2-markdown8" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Time: {{save.startTime}}</p>
+    </div>
+    <div id="eventInformation2-markdown9" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Room: {{save.room}}</p>
+    </div>
+    <div id="eventInformation2-markdown10" ng-if="save.note" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Notes: {{save.note}}</p>
+    </div>
+  </ion-content>
+</ion-view>
